@@ -134,6 +134,18 @@ PrefabInstance:
       propertyPath: m_Material
       value: 
       objectReference: {fileID: 6200000, guid: 72a8a07b8a60c4065bffc987b1efb9b4, type: 2}
+    - target: {fileID: 1266473570589969922, guid: 9de46a579a5c44a659998100a9e8d8af, type: 3}
+      propertyPath: m_UseOneWay
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1266473570589969922, guid: 9de46a579a5c44a659998100a9e8d8af, type: 3}
+      propertyPath: m_SurfaceArc
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1266473570589969922, guid: 9de46a579a5c44a659998100a9e8d8af, type: 3}
+      propertyPath: m_RotationalOffset
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7726811004415032511, guid: 9de46a579a5c44a659998100a9e8d8af, type: 3}
       propertyPath: m_Name
       value: Platform (1)
