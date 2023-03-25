@@ -12,8 +12,8 @@ public class PlayerController : MonoBehaviour
     public ProjectileController projectileController;
     public Transform launchOffset;
     public bool isFacingLeft;
-    public Vector2 facingLeft;
-    public bool spawnFacingLeft;
+    [HideInInspector] public Vector2 facingLeft;
+    [HideInInspector] public bool spawnFacingLeft;
 
 
     void Start()
@@ -71,11 +71,13 @@ public class PlayerController : MonoBehaviour
     {
         if (isFacingLeft)
         {
-            transform.localScale = facingLeft;
+            
+            transform.Rotate(0f, 180f, 0f);
         }
         if (!isFacingLeft)
         {
-            transform.localScale = new Vector2(-transform.localScale.x, transform.localScale.y);
+            
+            transform.Rotate(0f,-180f, 0f);
         }
     }
 }
