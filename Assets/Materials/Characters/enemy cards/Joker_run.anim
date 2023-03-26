@@ -2365,7 +2365,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: Bottom_card/Top_card/hand_right_arm/hand_right_botton
+    path: Bottom_card/Top_card/hand_right_arm
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -2375,7 +2375,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: Bottom_card/Top_card/hand_right_arm/hand_right_botton
+    path: Bottom_card/Top_card/hand_right_arm
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -2385,7 +2385,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: Bottom_card/Top_card/hand_right_arm/hand_right_botton
+    path: Bottom_card/Top_card/hand_right_arm
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -2395,7 +2395,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: Bottom_card/Top_card/head/left_pompon_top/left_pompon_middle/left_pompon_botton
+    path: Bottom_card/Top_card/hand_right_arm/hand_right_botton
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -2405,7 +2405,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: Bottom_card/Top_card/head/left_pompon_top/left_pompon_middle/left_pompon_botton
+    path: Bottom_card/Top_card/hand_right_arm/hand_right_botton
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -2415,7 +2415,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: Bottom_card/Top_card/head/left_pompon_top/left_pompon_middle/left_pompon_botton
+    path: Bottom_card/Top_card/hand_right_arm/hand_right_botton
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -2455,7 +2455,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: Bottom_card
+    path: Bottom_card/Top_card/head/left_pompon_top/left_pompon_middle/left_pompon_botton
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -2465,7 +2465,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: Bottom_card
+    path: Bottom_card/Top_card/head/left_pompon_top/left_pompon_middle/left_pompon_botton
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -2475,7 +2475,37 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: Bottom_card
+    path: Bottom_card/Top_card/head/left_pompon_top/left_pompon_middle/left_pompon_botton
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.z
+    path: Bottom_card/Top_card
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: Bottom_card/Top_card
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: Bottom_card/Top_card
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -2515,7 +2545,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: Bottom_card/Top_card/hand_right_arm
+    path: Bottom_card
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -2525,7 +2555,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: Bottom_card/Top_card/hand_right_arm
+    path: Bottom_card
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -2535,37 +2565,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: Bottom_card/Top_card/hand_right_arm
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
-    path: Bottom_card/Top_card
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.y
-    path: Bottom_card/Top_card
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: Bottom_card/Top_card
+    path: Bottom_card
     classID: 4
     script: {fileID: 0}
   - curve:

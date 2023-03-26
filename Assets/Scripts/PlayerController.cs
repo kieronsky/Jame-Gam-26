@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rb;
     private bool isGrounded;
     private Animator anim;
+   
     public ProjectileController projectileController;
     [SerializeField] private Transform launchOffset;
     
@@ -23,6 +24,7 @@ public class PlayerController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         anim = gameObject.GetComponent<Animator>();
+
         facingLeft = new Vector2(-transform.localScale.x, transform.localScale.y);
         if (spawnFacingLeft)
         {
@@ -34,8 +36,8 @@ public class PlayerController : MonoBehaviour
     {
         float horizontalInput = Input.GetAxis("Horizontal");
         Vector2 movement = new Vector2(horizontalInput, 0f) * moveSpeed;
-        rb.velocity = new Vector2(movement.x, rb.velocity.y);
-        anim.SetFloat("Speed", horizontalInput);
+        rb.velocity = (new Vector2(movement.x, rb.velocity.y));
+        anim.SetFloat("Speed", Mathf.Abs(horizontalInput));
         if (horizontalInput > 0 && isFacingLeft)
         {
             isFacingLeft = false;
@@ -53,7 +55,8 @@ public class PlayerController : MonoBehaviour
         {
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
             isGrounded = false;
-            
+            anim.SetBool("Jumping", true);
+
         }
         Shooting();
         cooldownTimer += Time.deltaTime;
@@ -64,6 +67,7 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.CompareTag("Ground"))
         {
             isGrounded = true;
+            anim.SetBool("Jumping", false);
         }
     }
 

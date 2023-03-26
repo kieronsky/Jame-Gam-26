@@ -20,6 +20,7 @@ public class ProjectileController : MonoBehaviour
         //anim = GetComponent<Animator>();
         boxCollider = GetComponent<BoxCollider2D>();
         rb.velocity = cardSpeed * transform.right;
+
     }
 
     private void Update()
