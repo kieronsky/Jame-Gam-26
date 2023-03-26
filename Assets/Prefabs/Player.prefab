@@ -47,7 +47,7 @@ GameObject:
   - component: {fileID: 6007295561878688018}
   - component: {fileID: 5967757067087445323}
   - component: {fileID: -3903772930485335771}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -142,7 +142,7 @@ MonoBehaviour:
   isFacingLeft: 0
   facingLeft: {x: 0, y: 0}
   spawnFacingLeft: 0
-  attackCooldown: 1
+  attackCooldown: 0.5
 --- !u!50 &3401246732352335840
 Rigidbody2D:
   serializedVersion: 4
@@ -246,6 +246,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 3
+  invulnerablityDuration: 0
+  numberOfFlashes: 0
 --- !u!1 &5967757067103521279
 GameObject:
   m_ObjectHideFlags: 0
@@ -302,7 +304,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5967757067237808857}
   m_LocalRotation: {x: 0, y: 0, z: 0.7148756, w: 0.6992518}
-  m_LocalPosition: {x: -0.06501031, y: -0.7644428, z: 0}
+  m_LocalPosition: {x: -0.07199812, y: -0.79017186, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -958,7 +960,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3702572804637076160}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: LaunchOffset
   m_TagString: Untagged
   m_Icon: {fileID: 7866945982896999795, guid: 0000000000000000d000000000000000, type: 0}
@@ -973,7 +975,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6855362758538747510}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.632, y: -0.215, z: 0.09245683}
+  m_LocalPosition: {x: 1, y: -0.35, z: 0.09245683}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

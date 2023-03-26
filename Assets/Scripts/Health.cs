@@ -32,12 +32,19 @@ public class Health : MonoBehaviour
         }
         else
         {
-            //Player
-            //anim.SetTrigger("Die");
+            if (!dead)
+            {
+                //anim.SetTrigger("Die");
+                //Player
+                if(GetComponent<PlayerController>() != null) 
+                    GetComponent<PlayerController>().enabled = false;
 
-            //Enemy
-            if(GetComponentInParent<EnemyPatrol>() != null) 
-            GetComponentInParent<EnemyPatrol>().enabled = false;
+                //Enemy
+                if(GetComponentInParent<EnemyPatrol>() != null)
+                    GetComponentInParent<EnemyPatrol>().enabled = false;
+                if(GetComponent<Enemy>() != null)
+                    GetComponent<Enemy>().enabled = false;
+            }
             
         }
     }

@@ -14,12 +14,20 @@ public class EnemyPatrol : MonoBehaviour
     [Header("Movement paramters")]
     [SerializeField] private float speed;
     private Vector3 initScale;
-
     private bool movingLeft;
+    [SerializeField] private float idleDuration;
+    private float idleTimer;
+    //[Header("Animation")]
+    //[SerializeField] private Animator anim;
 
     private void Awake()
     {
         initScale = enemy.localScale;
+    }
+
+    private void OnDisable()
+    {
+        //anim.SetBool("Moving", false);
     }
 
     private void Update()
@@ -55,11 +63,16 @@ public class EnemyPatrol : MonoBehaviour
 
     private void DirectionChange()
     {
-        movingLeft = !movingLeft;
+        //anim.SetBool("Moving", false);
+        idleTimer += Time.deltaTime;
+        if(idleTimer > idleDuration)
+            movingLeft = !movingLeft;
     }
 
     private void MoveInDirection(int direction)
     {
+        idleTimer = 0;
+        //anim.SetBool("Moving", true);
         enemy.localScale = new Vector3(Mathf.Abs(initScale.x) * direction, initScale.y, initScale.z);
         enemy.position = new Vector3(enemy.position.x + Time.deltaTime * direction * speed, enemy.position.y, enemy.position.z);
     }
