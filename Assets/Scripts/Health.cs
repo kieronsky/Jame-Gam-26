@@ -24,7 +24,13 @@ public class Health : MonoBehaviour
         }
         else
         {
+            //Player
             //anim.SetTrigger("Die");
+
+            //Enemy
+            if(GetComponentInParent<EnemyPatrol>() != null) 
+            GetComponentInParent<EnemyPatrol>().enabled = false;
+            
         }
     }
 
