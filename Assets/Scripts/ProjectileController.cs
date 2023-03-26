@@ -29,7 +29,7 @@ public class ProjectileController : MonoBehaviour
         float movementSpeed = cardSpeed * Time.deltaTime * direction;
         //transform.Translate(movementSpeed, 0, 0);
         lifetime += Time.deltaTime;
-        if (lifetime > 4) Destroy(this.gameObject);
+        if (lifetime > 1) Destroy(this.gameObject);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -39,6 +39,7 @@ public class ProjectileController : MonoBehaviour
         //anim.SetTrigger("Hit");
         if (collision.tag == "Enemy")
             collision.GetComponent<Health>().TakeDamage(1);
+            Destroy(this.gameObject);
     }
 
     public void SetDirection(float _direction)
