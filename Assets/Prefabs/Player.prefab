@@ -142,6 +142,7 @@ MonoBehaviour:
   isFacingLeft: 0
   facingLeft: {x: 0, y: 0}
   spawnFacingLeft: 0
+  attackCooldown: 1
 --- !u!50 &3401246732352335840
 Rigidbody2D:
   serializedVersion: 4

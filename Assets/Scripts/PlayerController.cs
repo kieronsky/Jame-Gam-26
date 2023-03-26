@@ -8,18 +8,21 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float jumpForce;
     private Rigidbody2D rb;
     private bool isGrounded;
-    private Animator anim;
+    //private Animator anim;
     public ProjectileController projectileController;
-    public Transform launchOffset;
+    [SerializeField] private Transform launchOffset;
+    
     public bool isFacingLeft;
     [HideInInspector] public Vector2 facingLeft;
     [HideInInspector] public bool spawnFacingLeft;
+    [SerializeField] private float attackCooldown;
+    private float cooldownTimer = Mathf.Infinity;
 
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        anim = GetComponent<Animator>();
+        //anim = GetComponent<Animator>();
         facingLeft = new Vector2(-transform.localScale.x, transform.localScale.y);
         if (spawnFacingLeft)
         {
@@ -49,7 +52,7 @@ public class PlayerController : MonoBehaviour
             isGrounded = false;
         }
         Shooting();
-        
+        cooldownTimer += Time.deltaTime;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -62,11 +65,18 @@ public class PlayerController : MonoBehaviour
 
     void Shooting()
     {
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonDown("Fire1") && cooldownTimer > attackCooldown)
         {
             Instantiate(projectileController, launchOffset.position, transform.rotation);
+            cooldownTimer = 0;
+            //anim.SetTrigger("Attack");
+
+            
         }
+        
     }
+
+   
     public void Flip()
     {
         if (isFacingLeft)

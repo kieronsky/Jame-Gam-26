@@ -11,7 +11,7 @@ public class Health : MonoBehaviour
     private void Awake()
     {
         currentHealth = startingHealth;
-        anim = GetComponent<Animator>();
+        //anim = GetComponent<Animator>();
     }
 
     public void TakeDamage(float damage)
@@ -20,11 +20,11 @@ public class Health : MonoBehaviour
 
         if(currentHealth > 0)
         {
-            anim.SetTrigger("Hurt");
+            //anim.SetTrigger("Hurt");
         }
         else
         {
-            anim.SetTrigger("Die");
+            //anim.SetTrigger("Die");
         }
     }
 
