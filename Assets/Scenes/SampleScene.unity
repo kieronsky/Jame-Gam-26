@@ -1472,6 +1472,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentCards: 0
   maxCards: 52
+--- !u!114 &703593986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 703593957}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad1c3841e9b4dc24a8b22bafb60212b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  respawnPoint: {fileID: 0}
 --- !u!1 &705896038 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7243968143983111472, guid: 2e9f8c562ab3f9640a563be5804cf84c, type: 3}
@@ -1913,6 +1927,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 2
+  dead: 0
   invulnerablityDuration: 0
   numberOfFlashes: 0
   components:
@@ -3894,7 +3909,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -3903772930485335771, guid: 56bd48df3a89d4cf8adb8b4573c17adc, type: 3}
       propertyPath: numberOfFlashes
-      value: 3
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: -3903772930485335771, guid: 56bd48df3a89d4cf8adb8b4573c17adc, type: 3}
       propertyPath: components.Array.size
@@ -3902,7 +3917,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -3903772930485335771, guid: 56bd48df3a89d4cf8adb8b4573c17adc, type: 3}
       propertyPath: invulnerablityDuration
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: -3903772930485335771, guid: 56bd48df3a89d4cf8adb8b4573c17adc, type: 3}
       propertyPath: components.Array.data[0]
