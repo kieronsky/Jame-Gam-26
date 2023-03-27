@@ -31,7 +31,7 @@ public class Enemy : MonoBehaviour
     private void Awake()
     {
         //anim = GetComponent<Animator>();
-        enemyPatrol = GetComponent<EnemyPatrol>();
+        enemyPatrol = GetComponentInParent<EnemyPatrol>();
         enemyProj = GetComponent<EnemyProjectile>();
     }
 

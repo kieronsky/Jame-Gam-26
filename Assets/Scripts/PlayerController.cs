@@ -69,6 +69,7 @@ public class PlayerController : MonoBehaviour
             isGrounded = true;
             anim.SetBool("Jumping", false);
         }
+        
     }
 
     void Shooting()
