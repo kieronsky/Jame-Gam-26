@@ -142,7 +142,7 @@ MonoBehaviour:
   isFacingLeft: 0
   facingLeft: {x: 0, y: 0}
   spawnFacingLeft: 0
-  attackCooldown: 0.5
+  attackCooldown: 0.2
 --- !u!50 &3401246732352335840
 Rigidbody2D:
   serializedVersion: 4
@@ -248,6 +248,7 @@ MonoBehaviour:
   startingHealth: 3
   invulnerablityDuration: 0
   numberOfFlashes: 0
+  components: []
 --- !u!1 &5967757067103521279
 GameObject:
   m_ObjectHideFlags: 0

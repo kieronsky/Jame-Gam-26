@@ -44,6 +44,7 @@ public class Health : MonoBehaviour
                 {
                     component.enabled = false;
                 }
+                Destroy(gameObject, 8);
 
                 dead = true;
             }
