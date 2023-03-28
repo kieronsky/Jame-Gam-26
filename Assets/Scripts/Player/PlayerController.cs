@@ -9,7 +9,8 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rb;
     private bool isGrounded;
     private Animator anim;
-   
+    AudioSource audioData;
+
     public ProjectileController projectileController;
     [SerializeField] private Transform launchOffset;
     
@@ -24,6 +25,7 @@ public class PlayerController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         anim = gameObject.GetComponent<Animator>();
+        audioData = GetComponent<AudioSource>();
 
         facingLeft = new Vector2(-transform.localScale.x, transform.localScale.y);
         if (spawnFacingLeft)
@@ -78,9 +80,10 @@ public class PlayerController : MonoBehaviour
         {
             Instantiate(projectileController, launchOffset.position, transform.rotation);
             cooldownTimer = 0;
+            audioData.Play(0);
             //anim.SetTrigger("Attack");
 
-            
+
         }
         
     }
