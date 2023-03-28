@@ -953,7 +953,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: fbfa6fa8c431d1c4dbc69445e6c9f333, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -2320,6 +2320,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1550846036275730485, guid: 56bd48df3a89d4cf8adb8b4573c17adc, type: 3}
+      propertyPath: shoot
+      value: 
+      objectReference: {fileID: 8300000, guid: fbfa6fa8c431d1c4dbc69445e6c9f333, type: 3}
+    - target: {fileID: 1550846036275730485, guid: 56bd48df3a89d4cf8adb8b4573c17adc, type: 3}
+      propertyPath: footSteps
+      value: 
+      objectReference: {fileID: 8300000, guid: 64a40bf56b2853d41b7d5ae50da7429b, type: 3}
     - target: {fileID: 1550846036275730485, guid: 56bd48df3a89d4cf8adb8b4573c17adc, type: 3}
       propertyPath: jumpForce
       value: 6.5
