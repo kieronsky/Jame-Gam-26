@@ -4,22 +4,26 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    [Header("Moving")]
     [SerializeField] private float moveSpeed;
     [SerializeField] private float jumpForce;
     private Rigidbody2D rb;
     private bool isGrounded;
     private Animator anim;
     AudioSource audioData;
+    [Header("Audio")]
     [SerializeField] AudioClip footSteps;
     [SerializeField] AudioClip shoot;
 
+    [Header("Shooting")]
     public ProjectileController projectileController;
     [SerializeField] private Transform launchOffset;
-    
-    public bool isFacingLeft;
+    [SerializeField] private float attackCooldown;
+
+    [HideInInspector] public bool isFacingLeft;
     [HideInInspector] public Vector2 facingLeft;
     [HideInInspector] public bool spawnFacingLeft;
-    [SerializeField] private float attackCooldown;
+    
     private float cooldownTimer = Mathf.Infinity;
 
 
@@ -43,36 +47,19 @@ public class PlayerController : MonoBehaviour
         rb.velocity = (new Vector2(movement.x, rb.velocity.y));
         anim.SetFloat("Speed", Mathf.Abs(horizontalInput));
 
+        if (Mathf.Abs(horizontalInput) > 0)
+            audioData.PlayOneShot(footSteps);
+        else audioData.Stop();
+
         if (horizontalInput > 0 && isFacingLeft)
         {
             isFacingLeft = false;
             Flip();
-            if(!audioData.isPlaying)
-            {
-                audioData.PlayOneShot(footSteps);
-
-            }
-            else 
-            {
-                audioData.Stop();
-
-            }
-            
         }
         if (horizontalInput < 0 && !isFacingLeft)
         {
             isFacingLeft = true;
             Flip();
-            if (!audioData.isPlaying)
-            {
-                audioData.PlayOneShot(footSteps);
-
-            }
-            else
-            {
-                audioData.Stop();
-
-            }
 
         }
 
