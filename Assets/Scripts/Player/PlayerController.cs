@@ -10,8 +10,10 @@ public class PlayerController : MonoBehaviour
     private bool isGrounded;
     private Animator anim;
     AudioSource audioData;
-    [SerializeField] AudioClip footSteps;
-    [SerializeField] AudioClip shoot;
+    //[SerializeField] AudioClip footSteps;
+    //[SerializeField] AudioClip shoot;
+    public AudioSource stepSound;
+    public AudioSource shootSound;
 
     public ProjectileController projectileController;
     [SerializeField] private Transform launchOffset;
@@ -42,38 +44,21 @@ public class PlayerController : MonoBehaviour
         Vector2 movement = new Vector2(horizontalInput, 0f) * moveSpeed;
         rb.velocity = (new Vector2(movement.x, rb.velocity.y));
         anim.SetFloat("Speed", Mathf.Abs(horizontalInput));
+        if (Mathf.Abs(horizontalInput) > 0)
+            stepSound.enabled = true;
+        else stepSound.enabled = false;
 
         if (horizontalInput > 0 && isFacingLeft)
         {
             isFacingLeft = false;
             Flip();
-            if(!audioData.isPlaying)
-            {
-                audioData.PlayOneShot(footSteps);
-
-            }
-            else 
-            {
-                audioData.Stop();
-
-            }
             
         }
         if (horizontalInput < 0 && !isFacingLeft)
         {
             isFacingLeft = true;
             Flip();
-            if (!audioData.isPlaying)
-            {
-                audioData.PlayOneShot(footSteps);
-
-            }
-            else
-            {
-                audioData.Stop();
-
-            }
-
+            
         }
 
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
@@ -103,7 +88,7 @@ public class PlayerController : MonoBehaviour
         {
             Instantiate(projectileController, launchOffset.position, transform.rotation);
             cooldownTimer = 0;
-            audioData.PlayOneShot(shoot);
+            shootSound.Play();
             //anim.SetTrigger("Attack");
 
 
