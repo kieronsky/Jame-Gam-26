@@ -1679,6 +1679,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9de46a579a5c44a659998100a9e8d8af, type: 3}
+--- !u!61 &1502570458 stripped
+BoxCollider2D:
+  m_CorrespondingSourceObject: {fileID: 7844919884682642500, guid: b5eed364ca907d640be839f03658496e, type: 3}
+  m_PrefabInstance: {fileID: 7844919885032699767}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1529545626
 GameObject:
   m_ObjectHideFlags: 0
@@ -2117,6 +2122,22 @@ PrefabInstance:
     - target: {fileID: 4804584982367644115, guid: b5eed364ca907d640be839f03658496e, type: 3}
       propertyPath: m_FlipX
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7844919883980236028, guid: b5eed364ca907d640be839f03658496e, type: 3}
+      propertyPath: startingHealth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7844919883980236028, guid: b5eed364ca907d640be839f03658496e, type: 3}
+      propertyPath: components.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7844919883980236028, guid: b5eed364ca907d640be839f03658496e, type: 3}
+      propertyPath: components.Array.data[2]
+      value: 
+      objectReference: {fileID: 1502570458}
+    - target: {fileID: 7844919883980236028, guid: b5eed364ca907d640be839f03658496e, type: 3}
+      propertyPath: components.Array.data[3]
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7844919884029933610, guid: b5eed364ca907d640be839f03658496e, type: 3}
       propertyPath: m_LocalRotation.w
