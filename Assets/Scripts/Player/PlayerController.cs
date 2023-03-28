@@ -4,21 +4,21 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    [Header("Player Movement")]
     [SerializeField] private float moveSpeed;
     [SerializeField] private float jumpForce;
     private Rigidbody2D rb;
     private bool isGrounded;
     private Animator anim;
     AudioSource audioData;
-    //[SerializeField] AudioClip footSteps;
-    //[SerializeField] AudioClip shoot;
+    [Header("Sounds")]
     public AudioSource stepSound;
     public AudioSource shootSound;
-
+    [Header("Shooting")]
     public ProjectileController projectileController;
     [SerializeField] private Transform launchOffset;
     
-    public bool isFacingLeft;
+    [HideInInspector]public bool isFacingLeft;
     [HideInInspector] public Vector2 facingLeft;
     [HideInInspector] public bool spawnFacingLeft;
     [SerializeField] private float attackCooldown;
