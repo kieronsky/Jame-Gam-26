@@ -22,7 +22,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] private LayerMask playerLayer;
     private float cooldownTimer = Mathf.Infinity;
 
-    //private Animator anim;
+    private Animator anim;
     private EnemyPatrol enemyPatrol;
     private EnemyProjectile enemyProj;
     //private Health playerHealth;
@@ -30,7 +30,7 @@ public class Enemy : MonoBehaviour
 
     private void Awake()
     {
-        //anim = GetComponent<Animator>();
+        anim = GetComponent<Animator>();
         enemyPatrol = GetComponentInParent<EnemyPatrol>();
         enemyProj = GetComponent<EnemyProjectile>();
     }
@@ -44,16 +44,24 @@ public class Enemy : MonoBehaviour
             if (cooldownTimer >= attackCooldown)
             {
                 cooldownTimer = 0;
-                //anim.SetTrigger("Attack");
+                anim.SetBool("Enemy_Attack", true);
                 EnemyAttack();
                 Debug.Log("Shoot");
             }
+            
+        }
+        else
+        {
+            anim.SetBool("Enemy_Attack", false);
         }
 
         if (enemyPatrol != null)
         {
             enemyPatrol.enabled = !PlayerInSight();
+            
         }
+        
+       
     }
 
     private bool PlayerInSight()

@@ -17,17 +17,12 @@ public class EnemyPatrol : MonoBehaviour
     private bool movingLeft;
     [SerializeField] private float idleDuration;
     private float idleTimer;
-    //[Header("Animation")]
-    //[SerializeField] private Animator anim;
+    [Header("Animation")]
+    [SerializeField] private Animator anim;
 
     private void Awake()
     {
         initScale = enemy.localScale;
-    }
-
-    private void OnDisable()
-    {
-        //anim.SetBool("Moving", false);
     }
 
     private void Update()
