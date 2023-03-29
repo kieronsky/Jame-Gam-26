@@ -1086,8 +1086,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Art and Animation  \t Dominika Tet\u0142ak\nMechanics and Scripts\t  Bartosz
-    Kiereta\n\nGame Design\nBartosz Kiereta\nDominika Tet\u0142ak\n\nAudio\nBartosz
-    Kiereta\nDominika Tet\u0142ak\n\nFonts \t\t\tFont Diner"
+    Kiereta\n\nGame Design\nBartosz Kiereta\nDominika Tet\u0142ak\n\n\nAudio\nBartosz
+    Kiereta\nDominika Tet\u0142ak\nProjects by Eric Matyas (Soundimage.org)\n\nFonts
+    \t\t\tFont Diner"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1461,7 +1462,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1970072276
 Transform:
   m_ObjectHideFlags: 0
