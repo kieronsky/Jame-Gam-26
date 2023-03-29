@@ -84,7 +84,7 @@ public class PlayerController : MonoBehaviour
 
     void Shooting()
     {
-        if (Input.GetButtonDown("Fire1") && cooldownTimer > attackCooldown)
+        if (Input.GetButtonDown("Fire1") || Input.GetKeyDown(KeyCode.S) && cooldownTimer > attackCooldown)
         {
             Instantiate(projectileController, launchOffset.position, transform.rotation);
             cooldownTimer = 0;
