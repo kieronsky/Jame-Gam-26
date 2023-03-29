@@ -2798,53 +2798,5 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyPatrol
       objectReference: {fileID: 0}
-    - target: {fileID: 5756693489272467698, guid: 801fbb3e1a7ed484c8d77ed3c1300ba0, type: 3}
-      propertyPath: m_SortingOrder
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 7030246276072481035, guid: 801fbb3e1a7ed484c8d77ed3c1300ba0, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.65017414
-      objectReference: {fileID: 0}
-    - target: {fileID: 7030246276072481035, guid: 801fbb3e1a7ed484c8d77ed3c1300ba0, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.75978523
-      objectReference: {fileID: 0}
-    - target: {fileID: 7030246276514950782, guid: 801fbb3e1a7ed484c8d77ed3c1300ba0, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.083634086
-      objectReference: {fileID: 0}
-    - target: {fileID: 7030246276514950782, guid: 801fbb3e1a7ed484c8d77ed3c1300ba0, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.99649656
-      objectReference: {fileID: 0}
-    - target: {fileID: 7030246276696249407, guid: 801fbb3e1a7ed484c8d77ed3c1300ba0, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.6569389
-      objectReference: {fileID: 0}
-    - target: {fileID: 7030246276696249407, guid: 801fbb3e1a7ed484c8d77ed3c1300ba0, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.7539438
-      objectReference: {fileID: 0}
-    - target: {fileID: 7030246277152072865, guid: 801fbb3e1a7ed484c8d77ed3c1300ba0, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.00000018251693
-      objectReference: {fileID: 0}
-    - target: {fileID: 7030246277226771311, guid: 801fbb3e1a7ed484c8d77ed3c1300ba0, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.043170482
-      objectReference: {fileID: 0}
-    - target: {fileID: 7030246277226771311, guid: 801fbb3e1a7ed484c8d77ed3c1300ba0, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.9990677
-      objectReference: {fileID: 0}
-    - target: {fileID: 7030246277643538319, guid: 801fbb3e1a7ed484c8d77ed3c1300ba0, type: 3}
-      propertyPath: m_SortingOrder
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 7030246278018064310, guid: 801fbb3e1a7ed484c8d77ed3c1300ba0, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.03160472
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 801fbb3e1a7ed484c8d77ed3c1300ba0, type: 3}

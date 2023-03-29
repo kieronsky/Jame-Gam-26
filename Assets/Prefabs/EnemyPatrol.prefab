@@ -86,7 +86,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 8
   m_Sprite: {fileID: 21300000, guid: 483463362a025564d9235098afbd636a, type: 3}
   m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_FlipX: 1
@@ -210,7 +210,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackCooldown: 1
-  range: 10
+  range: 5
   damage: 1
   firepoint: {fileID: 7030246277655373523}
   projectiles:
@@ -224,7 +224,7 @@ MonoBehaviour:
   - {fileID: 366987398271900251}
   - {fileID: 366987398788342299}
   - {fileID: 366987398569155716}
-  colliderDistance: 0.5
+  colliderDistance: 0.56
   boxCollider: {fileID: 7030246276767210853}
   playerLayer:
     serializedVersion: 2
@@ -1062,7 +1062,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 7
   m_Sprite: {fileID: 21300000, guid: e7599bd8d98a09747885e029a1c853a8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
