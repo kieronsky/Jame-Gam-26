@@ -29,7 +29,7 @@ public class ProjectileController : MonoBehaviour
         float movementSpeed = cardSpeed * Time.deltaTime * direction;
         //transform.Translate(movementSpeed, 0, 0);
         lifetime += Time.deltaTime;
-        if (lifetime > 1) Destroy(this.gameObject);
+        if (lifetime > 0.25) Destroy(this.gameObject);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

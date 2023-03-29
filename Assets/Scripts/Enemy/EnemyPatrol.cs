@@ -12,13 +12,13 @@ public class EnemyPatrol : MonoBehaviour
     [SerializeField] private Transform enemy;
 
     [Header("Movement paramters")]
-    [SerializeField] private float speed;
+    //[SerializeField] private float speed;
     private Vector3 initScale;
     private bool movingLeft;
-    [SerializeField] private float idleDuration;
+    //[SerializeField] private float idleDuration;
     private float idleTimer;
-    [Header("Animation")]
-    [SerializeField] private Animator anim;
+    //[Header("Animation")]
+    //[SerializeField] private Animator anim;
 
     private void Awake()
     {
@@ -60,7 +60,7 @@ public class EnemyPatrol : MonoBehaviour
     {
         //anim.SetBool("Moving", false);
         idleTimer += Time.deltaTime;
-        if(idleTimer > idleDuration)
+        if (idleTimer > Random.Range(0.6f, 2.5f))
             movingLeft = !movingLeft;
     }
 
@@ -69,6 +69,6 @@ public class EnemyPatrol : MonoBehaviour
         idleTimer = 0;
         //anim.SetBool("Moving", true);
         enemy.localScale = new Vector3(Mathf.Abs(initScale.x) * direction, initScale.y, initScale.z);
-        enemy.position = new Vector3(enemy.position.x + Time.deltaTime * direction * speed, enemy.position.y, enemy.position.z);
+        enemy.position = new Vector3(enemy.position.x + Time.deltaTime * direction * Random.Range(1f, 4f), enemy.position.y, enemy.position.z);
     }
 }

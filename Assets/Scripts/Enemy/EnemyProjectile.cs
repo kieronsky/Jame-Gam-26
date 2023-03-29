@@ -26,6 +26,7 @@ public class EnemyProjectile : EnemyDamage
         lifetime = 0;
         gameObject.SetActive(true);
         coll.enabled = true;
+        
 
     }
 
@@ -35,6 +36,7 @@ public class EnemyProjectile : EnemyDamage
             return;
         float movementSpeed = speed * Time.deltaTime;
         transform.Translate(movementSpeed, 0, 0);
+        Debug.Log("siuuuuuuu");
 
         lifetime += Time.deltaTime;
         if(lifetime > resetTime)
